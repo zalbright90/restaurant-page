@@ -1,0 +1,28 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "A dynamic restaurant homepage created using only JavaScript for content generation. This project showcases DOM manipulation skills learned, dynamically rendering the entire website structure without using HTML content directly. The page will include multiple sections like Home, Menu, and Contact, all generated through JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zalbright90/restaurant-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zalbright90/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/zalbright90/restaurant-page#readme",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
