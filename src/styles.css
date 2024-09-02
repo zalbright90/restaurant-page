@@ -1,53 +1,69 @@
 :root {
-  --bg-color: #080808;
+  --bg-dark: #080808;
+  --bg-alt: #121212;
   --green: #3e7742;
   --brown: #431a10;
+  --beige: #e1b89f;
   --text-lt: #f9f9f9;
   --text-dk: #303030;
+  --yellow: #d4a017; /* For highlights or Call to Action */
+  --red: #7c1c1c; /* For vibrancy (important elements) */
+  --teal: #2e7d6c;
 }
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  }
+}
   
-  header {
+header {
     background-color: var(--green);
     color: var(--text-lt);
-    padding: 1rem;
     text-align: center;
-  }
+}
   
-  nav button {
+nav button {
     background: var(--brown);
     border: none;
     color: var(--text-lt);
     cursor: pointer;
     font-size: 1rem;
-    margin: 0 1rem;
-  }
+    font-weight: bold;
+    margin: 0 0.5rem;
+    padding: 20px;
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
+}
   
-  nav button:hover {
-    text-decoration: underline;
-  }
+nav button:hover {
+    color: var(--green);
+}
   
-  #content {
+#content {
     padding: 2rem;
     text-align: center;
-  }
+}
   
-  .logo {
+.logo {
     width: 200px; /* Adjust size as needed */
     height: auto;
     margin-bottom: 1rem;
-  }
+}
   
-  h1 {
+h1, h2 {
     color: var(--text-dk);
-  }
+}
   
-  p {
+p {
     color: var(text-dk);
     font-size: 1.2rem;
-  }
+}
+
+.home {
+  border: 2px solid var(--teal);
+  padding: 20px;
+  width: 420px;
+  margin: 0 auto;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
