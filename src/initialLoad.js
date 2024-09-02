@@ -1,9 +1,11 @@
+import logoImage from './images/logo.png';
+
 function initialPageLoad() {
     const content = document.querySelector('#content');
 
     // Create Logo
     const logo = document.createElement('img');
-    logo.src = './images/logo-transparent.png';
+    logo.src = logoImage;
     logo.alt = 'The Twisted Fork Logo';
     logo.classList.add('logo');
 
