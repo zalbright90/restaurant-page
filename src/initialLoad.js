@@ -1,26 +1,48 @@
 import logoImage from './images/logo.png';
+function createHeader() {
+    const header = document.createElement('header');
 
-function initialPageLoad() {
-    const content = document.querySelector('#content');
-
-    // Create Logo
+    // Create and insert logo
     const logo = document.createElement('img');
     logo.src = logoImage;
     logo.alt = 'The Twisted Fork Logo';
     logo.classList.add('logo');
+    header.appendChild(logo);
 
-    // Create headline
-    const headline = document.createElement('h1');
-    headline.textContent = 'Welcome to the Twisted Fork!';
+    // Create navigation
+    const nav = document.createElement('nav');
+    const homeButton = document.createElement('button');
+    homeButton.id = 'home-tab';
+    homeButton.textContent = 'Home';
 
-    // Create the description paragraph
-    const description = document.createElement('p');
-    description.textContent = 'Forking good food served fresh daily in a cozy environment. Join us for a delicious meal!';
+    const menuButton = document.createElement('button');
+    menuButton.id = 'menu-tab';
+    menuButton.textContent = 'Menu';
 
-    // Append elements to #content
-    content.appendChild(logo);
-    content.appendChild(headline);
-    content.appendChild(description);
+    const aboutButton = document.createElement('button');
+    aboutButton.id = 'about-tab';
+    aboutButton.textContent = 'About';
+
+    nav.appendChild(homeButton);
+    nav.appendChild(menuButton);
+    nav.appendChild(aboutButton);
+    header.appendChild(nav);
+
+    return header;
+}
+
+function initialPageLoad() {
+    const body = document.querySelector('body');
+    
+    // Create and insert header
+    const header = createHeader();
+    body.insertBefore(header, document.querySelector('#content'));
+    
+    // Optionally, insert initial content
+    const content = document.querySelector('#content');
+    const initialContent = document.createElement('div');
+    initialContent.textContent = 'Initial content goes here.';
+    content.appendChild(initialContent);
 }
 
 export default initialPageLoad;
