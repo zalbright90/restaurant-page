@@ -21,6 +21,7 @@ header {
     background-color: var(--bg-alt);
     color: var(--text-lt);
     text-align: center;
+    border-bottom: 2px solid var(--brown);
 }
   
 nav button {
@@ -31,7 +32,7 @@ nav button {
     font-size: 1rem;
     font-weight: bold;
     margin: 0 0.5rem;
-    padding: 20px;
+    padding: 10px 20px 10px;
     border-top-left-radius: 23px;
     border-top-right-radius: 23px;
 }
@@ -89,4 +90,40 @@ p {
   font-size: 1rem;
   margin: 4px 0 1rem;
   width: 420px;
+}
+
+footer {
+  background-color: var(--bg-alt); /* Alternative dark background */
+  color: var(--text-lt); /* Light text for dark background */
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  border-top: 2px solid var(--brown); /* Brown border for separation */
+}
+
+footer p {
+  margin: 0;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: var(--green); /* Primary green for icons */
+  font-size: 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--golden-yellow); /* Golden yellow on hover */
+}
+
+.social-links a:focus {
+  outline: 2px solid var(--beige); /* Beige outline for accessibility */
+  outline-offset: 2px;
 }
