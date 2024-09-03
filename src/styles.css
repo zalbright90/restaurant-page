@@ -18,7 +18,7 @@ body {
 }
   
 header {
-    background-color: var(--bg-alt);
+    background-color: var(--beige);
     color: var(--text-lt);
     text-align: center;
     border-bottom: 2px solid var(--brown);
@@ -44,7 +44,7 @@ nav button:hover {
 #content {
     padding: 2rem;
     text-align: center;
-    background-color: var(--bg-dark);
+    background-color: var(--bg-alt);
 }
   
 .logo {
@@ -93,7 +93,7 @@ p {
 }
 
 footer {
-  background-color: var(--bg-alt); /* Alternative dark background */
+  background-color: var(--bg-dark); /* Alternative dark background */
   color: var(--text-lt); /* Light text for dark background */
   padding: 20px 0;
   text-align: center;
