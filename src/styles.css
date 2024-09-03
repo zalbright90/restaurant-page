@@ -1,6 +1,6 @@
 :root {
   --bg-dark: #080808;
-  --bg-alt: #121212;
+  --bg-alt: #535353;
   --green: #3e7742;
   --brown: #431a10;
   --beige: #e1b89f;
@@ -18,7 +18,7 @@ body {
 }
   
 header {
-    background-color: var(--green);
+    background-color: var(--bg-alt);
     color: var(--text-lt);
     text-align: center;
 }
@@ -43,27 +43,50 @@ nav button:hover {
 #content {
     padding: 2rem;
     text-align: center;
+    background-color: var(--bg-dark);
 }
   
 .logo {
-    width: 200px; /* Adjust size as needed */
+    width: 250px; /* Adjust size as needed */
     height: auto;
-    margin-bottom: 1rem;
+    margin: 1rem auto;
 }
   
 h1, h2 {
-    color: var(--text-dk);
+    color: var(--text-lt);
 }
   
 p {
-    color: var(text-dk);
+    color: var(--text-lt);
     font-size: 1.2rem;
 }
 
-.home {
+.home, .menu, .about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   border: 2px solid var(--teal);
   padding: 20px;
-  width: 420px;
-  margin: 0 auto;
+  width: 480px;
+  margin: 0 auto 4rem;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.menu-category {
+  align-self: flex-start;
+  margin-right: 275px;
+}
+
+.menu-item {
+  font-weight: bold;
+  align-self: flex-start;
+  color: var(--text-lt);  
+}
+
+.item-description {
+  color: var(--text-lt);
+  font-size: 1rem;
+  margin: 4px 0 1rem;
+  width: 420px;
 }
